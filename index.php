@@ -75,6 +75,9 @@
                 
                 <label>Cantidad (1-10):</label>
                 <input type="number" name="cantidad" min="1" max="10" required>
+
+                <label>Subir Comprobante:</label>
+                <input type="file" name="comprobante" accept="image/*" required>
                 
                 <label>Total: $<span id="total">0</span></label>
                 
