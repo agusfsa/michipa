@@ -1,0 +1,6 @@
+Vic|1
+Sole|3
+Agus|1
+David|2
+Vic|1
+Sebas|1

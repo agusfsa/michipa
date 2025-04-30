@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #34495e;
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+p {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 12px 25px;
+    background: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.button:hover {
+    background: #005ea2;
+    transform: translateY(-2px);
+}
+
+.edit-button, .delete-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin: 0 2px; /* Espaciado entre botones */
+}
+
+.delete-button {
+    background: #ef5350; /* Rojo para eliminar */
+}
+
+.delete-button:hover {
+    background: #d32f2f; /* Rojo más oscuro para hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #e6f4ea;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background: #4caf50;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+td {
+    color: #2e7d32;
+}
+
+tr:nth-child(even) {
+    background: #dcedc8;
+}
+
+tr:hover {
+    background: #c8e6c9;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    z-index: 9;
+    text-align: center;
+}
+
+.form-popup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-popup label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.form-popup input[type="text"],
+.form-popup input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-popup input[type="submit"],
+.form-popup button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-popup input[type="submit"] {
+    background: #2ecc71;
+}
+
+.form-popup input[type="submit"]:hover {
+    background: #27ae60;
+}
+
+.form-popup button.cancel-button {
+    background: #ef5350;
+}
+
+.form-popup button.cancel-button:hover {
+    background: #d32f2f;
+}
+
+/* Estilo para el total general */
+.total-general {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #a5d6a7;
+    color: #2e7d32;
+    font-weight: 600;
+    text-align: right;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+/* Estilo para la fecha actual */
+.fecha-actual {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.9em;
+    color: #4a4e69;
+}
+
+/* Estilo para el footer */
+footer {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
